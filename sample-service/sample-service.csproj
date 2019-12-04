@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-sample_service-CE5AB3C4-5016-46A4-9266-EEABE9FA7C0F</UserSecretsId>
+    <RootNamespace>sample_service</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="data\**" CopyToPublishDirectory="PreserveNewest"/>
+  </ItemGroup>
+</Project>

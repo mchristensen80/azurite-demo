@@ -6,3 +6,10 @@ services:
     ports:
      - "10000:10000"
      - "10001:10001"
+  
+  sample:
+    build:
+      context: ./sample-service
+      dockerfile: Dockerfile
+    depends_on: 
+     - blob
